@@ -1,9 +1,13 @@
 import './App.css';
 import React from 'react'
-import NavBarBlock from './component/NavBar/NavBar'
+import Intro from './component/Intro/Intro'
+import Header from './component/Header/Header'
 
 export default function App() {
   return (
-   <NavBarBlock />
+    <div className="">
+      <Header />
+      <Intro />
+    </div>
   );
 }
