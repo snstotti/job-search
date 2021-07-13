@@ -7,18 +7,18 @@ import FormJobSearch from '../FormJobSearch/FormJobSearch';
 export default function Intro() {
 
     return (
-        <div className="intro">
+        <div className="intro site-header">
             <Container>
-                <div className="text-center text-white mb-5 p-1">
-                    <h2 className="intro__title">Title</h2>
-                    <h5 className="intro__subtitle">Description</h5>
+                <div className=" d-flex flex-column align-items-center ">
+                    <div className="text-center text-white mb-5 p-1">
+                        <h2 className="intro__title">Title</h2>
+                        <h5 className="intro__subtitle">Description</h5>
+                    </div>
+                    <div className="mt-5 p-1">
+                        <FormJobSearch />
+                    </div>
                 </div>
-                <div className="mt-5 p-1">
-                <FormJobSearch />
-                </div>
-                
             </Container>
         </div>
-
     )
 }

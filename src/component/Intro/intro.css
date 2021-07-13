@@ -2,7 +2,9 @@
     padding-top: 80px;
     background: url("../../img/bg-banner1.jpg");
     background-attachment: fixed;
-    height: 1020px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
 }
 .intro__title{
     font-size: 37px;
