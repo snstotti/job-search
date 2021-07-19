@@ -4,6 +4,7 @@ import Intro from './component/Intro/Intro'
 import Header from './component/Header/Header'
 import Categories from './component/Categories/Categories';
 import SubscribeBlock from './component/SubscribeBlock/SubscribeBlock';
+import Footer from './component/Footer/Footer';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Intro />
       <Categories />
       <SubscribeBlock />
+      <Footer />
     </div>
   );
 }
