@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Header() {
 
     const arr = ['HOME','POSITION','RESUME','COMPANY','PAGES' ]
-    const list = arr.map(el=><Nav.Link  href={`#${el}`}> <ExtraList title={el} /> </Nav.Link>)
+    const list = arr.map(el=><Nav.Link  href={el.toLowerCase()}> <ExtraList title={el} /> </Nav.Link>)
 
     return (
 
@@ -27,18 +27,6 @@ export default function Header() {
             </Navbar>
                 
             </Container>
-            {/* <Container>
-                <h1>Title</h1>
-                <h4 className="mb-5">Description</h4>
-                <InputGroup className="m-auto w-75">
-
-                    <FormControl placeholder='Work' />
-                    <FormControl placeholder='City' />
-                    <InputGroup.Prepend>
-                        <Button variant="secondary">search</Button>
-                    </InputGroup.Prepend>
-                </InputGroup>
-            </Container> */}
         </header>
     )
 }

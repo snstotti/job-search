@@ -1,19 +1,29 @@
 import './App.css';
 import React from 'react'
-import Intro from './component/Intro/Intro'
 import Header from './component/Header/Header'
-import Categories from './component/Categories/Categories';
-import SubscribeBlock from './component/SubscribeBlock/SubscribeBlock';
 import Footer from './component/Footer/Footer';
+import { Route, Redirect, Switch, withRouter } from "react-router-dom"
+import HomeContainer from './component/HomeContainer/HomeContainer';
+import { AlertComponent } from './component/Alert/AlertComponent';
 
-export default function App() {
+function App() {
+
+   
+
   return (
     <div className="">
       <Header />
-      <Intro />
-      <Categories />
-      <SubscribeBlock />
+      <Switch>
+        <Route  path='/home' component={HomeContainer} />
+        <Route  path='/resume' component={AlertComponent} />
+        <Route  path='/position' component={AlertComponent} />
+        <Route  path='/company' component={AlertComponent} />
+        <Route  path='/pages' component={AlertComponent} />
+        <Redirect from='/' to='/home'/>
+      </Switch>
       <Footer />
     </div>
   );
 }
+
+export default withRouter(App)
