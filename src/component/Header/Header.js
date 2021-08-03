@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container,Navbar,Nav,Button,Form} from 'react-bootstrap'
 import ExtraList from './ExtraList/ExtraList'
+import './Header.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Header() {
@@ -10,8 +11,8 @@ export default function Header() {
 
     return (
 
-        <header className="position-absolute w-100 top-0 left-0">
-            <Container>
+        <header className="header position-absolute w-100 top-0 left-0">
+            <Container className="position-relative">
             <Navbar bg="" expand="lg">
             <Navbar.Brand href="#home">Job Search</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

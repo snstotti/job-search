@@ -1,12 +1,17 @@
 import React from 'react'
-import Intro from '../Intro/Intro'
-import Categories from '../Categories/Categories'
-import SubscribeBlock from '../SubscribeBlock/SubscribeBlock'
+import Categories from './Categories/Categories'
+import SubscribeBlock from './SubscribeBlock/SubscribeBlock'
+import FormJobSearch from './FormJobSearch/FormJobSearch'
+import TitleComponent from '../../secondaryFunc/TitleComponent/TitleComponent'
 
 export default function HomeContainer() {
     return (
         <>
-            <Intro />
+            <TitleComponent
+                title={'Title'}
+                description={'Descriptionss'}
+                component={<FormJobSearch />} />
+
             <Categories />
             <SubscribeBlock />
         </>

@@ -1,8 +1,10 @@
 import React from 'react'
 import {Container,Alert,Nav,Button} from 'react-bootstrap'
+import  './alert.scss'
 
 export const AlertComponent = () => {
     return (
+        <div className="alert">
         <Container>
             <Alert show={true} variant="success" style={{ marginTop: 150, textAlign: 'center'}}>
                 <Alert.Heading>Ohh sorry</Alert.Heading>
@@ -16,5 +18,6 @@ export const AlertComponent = () => {
                 </Button>
             </Alert>
         </Container>
+        </div>
     )
 }
