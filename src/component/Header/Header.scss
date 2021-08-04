@@ -1,3 +1,13 @@
 .header{
+    &__navbar{
+        mix-blend-mode: difference;
+        background: #ffffff27;
+        
+        color: rgb(17, 2, 2);
+    }
+    &__navLink{
+        // color: #fff;
+        
+    }
     z-index: 1000;
 }
