@@ -13,7 +13,7 @@ export default function Header() {
 
         <header className="header position-absolute w-100 top-0 left-0">
 
-            <Navbar fixed="top" variant="dark" style={{background: '#ffffff27', mixBlendBmode: 'difference'}} expand="lg" className="header__navbar ">
+            <Navbar fixed="" variant="dark" style={{background: '#ffffff27', mixBlendBmode: 'difference'}} expand="lg" className="header__navbar ">
                 <Container className="position-relative">
                     <Navbar.Brand href="#home">Job Search</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

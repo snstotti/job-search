@@ -2,7 +2,8 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import TitleComponent from '../../secondaryFunc/TitleComponent/TitleComponent.js'
 import FormJobSearch from '../HomeContainer/FormJobSearch/FormJobSearch.js'
-import "./JobList.js"
+import JobFilter from './JobFilter/JobFilter.js'
+import "./JobList.scss"
 
 export default function JobList() {
     return (
@@ -10,7 +11,7 @@ export default function JobList() {
             <TitleComponent
                 title={'Browse jobs'}
                 description={'Use following search box to find jobs that fits you better'}
-                component={<FormJobSearch />} />
+                component={<JobFilter />} />
         </div>
     )
 }
