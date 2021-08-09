@@ -4,8 +4,10 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-   position: relative;
+    position: relative;
     height: 600px;
+    margin-bottom: 120px;
+    
 }
 .intro::after{
     position: absolute;

@@ -1,46 +1,45 @@
 import React from 'react'
-import { Form, Button, Container, } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
+import FormGroup from './FormGroup/FormGroup';
 import './JobFilter.scss'
 
 export default function JobFilter() {
-    let reffs = [1,2,3,4,5,5]
+
+    const checkboxContract = ['All types', 'Full-time', 'Part-time', 'Internship', 'Freelance']
+    const checkboxRate = ['All rates', '0$-50$', '50$-100$', '100$-200$', '200$-250$']
+    const checkboxAcademicDegree = ['All degrees', 'Associate degree ', "Bachelor's degree", "Master's degree", 'Doctoral degree']
+
     return (
         <div className="job-filter">
 
-            <Form className="mb-3 d-flex justify-content-around w-100">
+            <Form className="mb-3 flex-column w-100">
+                <div className="mb-3 d-flex justify-content-around w-100">
+                    <FormGroup
+                        placeholder='Skils'
+                        listCheckbox={checkboxContract} />
 
-                <Form.Group className="mb-3 mt-3 w-25" controlId="">
+                    <FormGroup
+                        placeholder='Location'
+                        listCheckbox={checkboxRate} />
 
-                    <Form.Control className="p-3" type="text" placeholder="Enter email" />
-
-
-                </Form.Group>
-                <Form.Group className="mb-3 mt-3 w-25" controlId="">
-
-                    <Form.Control className="p-3" type="text" placeholder="Enter email" />
-
-
-                </Form.Group>
-                
-                <Form.Group className="mb-3 mt-3 w-25" controlId="">
-                    
-                    <Form.Control
-                        as="select"
-                        defaultValue='9'
-                       onChange={val=>console.log(val)}
-                    >
-                        <option value='1'>1</option>
-                        <option value='2'>2</option>
-                        <option value='3'>3</option>
-                    </Form.Control>
+                    <FormGroup
+                        placeholder=''
+                        listCheckbox={checkboxAcademicDegree}
+                        type='select' />
 
 
-                </Form.Group>
+                </div>
+                <div className="d-flex justify-content-end ">
+                    <Button 
+                    className="mr-5 mb-3" 
+                    variant="primary" 
+                    type="submit"
+                    onClick={(e)=>e.preventDefault()}>
+                        Apply
+                    </Button>
 
-               
-
+                </div>
             </Form>
-            
         </div>
     )
 }

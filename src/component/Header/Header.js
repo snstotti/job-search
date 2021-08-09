@@ -1,13 +1,12 @@
 import React from 'react'
 import {Container,Navbar,Nav,Button,Form} from 'react-bootstrap'
-import ExtraList from './ExtraList/ExtraList'
 import './Header.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Header() {
 
     const arr = ['HOME','POSITION','RESUME','COMPANY','PAGES' ]
-    const list = arr.map(el=><Nav.Link className="header__navLink"  href={el.toLowerCase()}> {el} </Nav.Link>)
+    const list = arr.map(el=><Nav.Link key={el} className="header__navLink"  href={el.toLowerCase()}> {el} </Nav.Link>)
 
     return (
 
