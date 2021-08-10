@@ -2,7 +2,7 @@ import React from 'react'
 import TitleComponent from '../../secondaryFunc/TitleComponent/TitleComponent.js'
 import JobFilter from './JobFilter/JobFilter.js'
 import "./JobList.scss"
-import JobListItem from './JobListItem/JobListItem.js'
+import CardJob from './JobListItem/CardJob.js'
 
 export default function JobList() {
 
@@ -13,7 +13,7 @@ export default function JobList() {
                 description={'Use following search box to find jobs that fits you better'}
                 component={<JobFilter />}
              />
-            <JobListItem />
+            <CardJob />
         </div>
     )
 }
