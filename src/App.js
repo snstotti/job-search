@@ -1,20 +1,20 @@
 import './App.css';
 import React from 'react'
-import Header from './component/Header/Header'
+import NavBar from './component/NavBar/NavBar'
 import Footer from './component/Footer/Footer';
 import { Route, Redirect, Switch, withRouter } from "react-router-dom"
 import HomeContainer from './component/HomeContainer/HomeContainer';
 import { AlertComponent } from './component/Alert/AlertComponent';
-import Intro from './component/Intro/Intro';
+import Header from './component/Header/Header';
 import JobList from './component/JobList/JobList';
 import TitleComponent from './secondaryFunc/TitleComponent/TitleComponent';
 
 function App() {
 
   return (
-    <div className="">
+    <>
+      <NavBar />
       <Header />
-      <Intro />
 
       <Switch>
         <Route path='/home' component={HomeContainer} />
@@ -47,7 +47,7 @@ function App() {
       </Switch>
 
       <Footer />
-    </div>
+    </>
   );
 }
 

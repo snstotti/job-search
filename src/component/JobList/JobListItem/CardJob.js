@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Col } from 'react-bootstrap'
+import { Container, Col } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
 import googleIcon from '../../../img/google-icon.png'
 import './CardJob.scss'
@@ -9,8 +9,8 @@ import './CardJob.scss'
 export default function CardJob() {
 
     return (
-        <div className='row card-job '>
-            <Container>
+        <div className='row card-job justify-content-center'>
+            {/* <Container> */}
                 {/* <h5 className='col-xs-12'>We found 357 matches, you're watching 10 to 20</h5> */}
                 <div className='card-job__block '>
                     <div className='d-flex justify-content-between align-items-center'>
@@ -32,7 +32,7 @@ export default function CardJob() {
                     </div>
                 </div>
 
-            </Container>
+            {/* </Container> */}
         </div>
     )
 }
