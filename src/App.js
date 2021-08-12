@@ -8,6 +8,7 @@ import { AlertComponent } from './component/Alert/AlertComponent';
 import Header from './component/Header/Header';
 import JobList from './component/JobList/JobList';
 import TitleComponent from './secondaryFunc/TitleComponent/TitleComponent';
+import JobDetail from './component/JobDetail/JobDetail';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         />
 
         <Route path='/position' component={JobList} />
+        <Route path='/job-detail' component={JobDetail} />
 
         <Route 
           path='/company' 

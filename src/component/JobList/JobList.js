@@ -15,6 +15,7 @@ export default function JobList() {
                 description={'Use following search box to find jobs that fits you better'}
                 component={<JobFilter />}
              />
+             <div>
              <Container>
              <h5 className="mb-5">We found 357 matches, you're watching 10 to 20</h5>
             <CardJob />
@@ -22,6 +23,8 @@ export default function JobList() {
             <CardJob />
             <PageNumbering />
              </Container>
+             </div>
+            
            
         </div>
     )
