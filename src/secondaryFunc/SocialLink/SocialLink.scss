@@ -1,18 +1,21 @@
 .social-link{
-    // font-size: 30px;
-    // margin: 10px 0;
+    padding: 0;
     
     li{
         font-size: 30px;
-    margin: 10px 0;
+        margin: 10px 5px;
+        list-style: none;
     }
+    li:hover, li:active, li:focus{
+        color: #fff;
+        cursor: pointer;
+    }    
 
     li:hover, li:active, li:focus{
         color: #fff;
         cursor: pointer;
     }
     ul{
-        padding-left: 0;
-        list-style: none;
+        
     }
 }

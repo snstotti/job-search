@@ -1,6 +1,4 @@
 import React from 'react'
-import { Container, Col } from 'react-bootstrap'
-import Image from 'react-bootstrap/Image'
 import { Link } from 'react-router-dom'
 import googleIcon from '../../../img/google-icon.png'
 import TitleJob from '../../../secondaryFunc/TitleJob/TitleJob'

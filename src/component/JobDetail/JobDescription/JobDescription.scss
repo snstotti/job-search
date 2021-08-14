@@ -1,4 +1,14 @@
 .detail{
-   
     background-color: #fff;
+    box-shadow: 0 0 10px #464544ab; 
+
+    &__share{
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    &__footer{
+        background-color: #fafafa;
+    }
+   
 }
