@@ -4,7 +4,7 @@ import PageNumbering from '../../secondaryFunc/Pagination/Pagination.js'
 import TitleComponent from '../../secondaryFunc/TitleComponent/TitleComponent.js'
 import JobFilter from './JobFilter/JobFilter.js'
 import "./JobList.scss"
-import CardJob from './JobListItem/CardJob.js'
+import CardJob from './CardJob/CardJob.js'
 
 export default function JobList() {
 

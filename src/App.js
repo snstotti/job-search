@@ -9,6 +9,7 @@ import Header from './component/Header/Header';
 import JobList from './component/JobList/JobList';
 import TitleComponent from './secondaryFunc/TitleComponent/TitleComponent';
 import JobDetail from './component/JobDetail/JobDetail';
+import AddResume from './component/AddResume/AddResume';
 
 function App() {
 
@@ -22,10 +23,7 @@ function App() {
         
         <Route 
           path='/resume' 
-          render={() => <TitleComponent
-          title={'Resume'}
-          description={'Descriptionss'}
-          component={<AlertComponent />} />}
+          render={() => <AddResume />}
         />
 
         <Route path='/position' component={JobList} />
