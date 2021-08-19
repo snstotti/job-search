@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap'
 
 export default function IntroInfo() {
     return (
-        <Form>
+        <Form className="">
             <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Control type="text" placeholder="Имя" />
             </Form.Group>
