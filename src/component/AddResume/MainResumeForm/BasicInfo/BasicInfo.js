@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, FormControl, InputGroup } from 'react-bootstrap'
+import {  FormControl, InputGroup } from 'react-bootstrap'
 
 export default function BasicInfo() {
     const arrClassname = [
@@ -14,19 +14,19 @@ export default function BasicInfo() {
 
     const listInput = arrClassname.map(el => {
         return (
-            <Col xs={6} key={el.class} >
-                <InputGroup className="mb-2">
+            
+                <InputGroup key={el.class} className="m-2 w-auto ">
                     <InputGroup.Text ><i className={`"bi" ${el.class}`}></i></InputGroup.Text>
-                    <FormControl  placeholder={el.placeholder} />
+                    <FormControl  placeholder={el.placeholder}  className=""/>
                 </InputGroup>
-            </Col>
+           
         )
     })
 
     return (
-        <>
+        <div className="d-flex justify-content-between  flex-wrap w-auto">
             {listInput}
 
-        </>
+        </div>
     )
 }
