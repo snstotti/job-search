@@ -4,13 +4,13 @@ import './Categories.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Categories() {
-    return (
-        <section className="categories">
+    return ( 
+        <section className="categories mt-5 p-5 d-flex flex-column align-items-center bg-light">
             <Container>
-            <header className="categories__title text-center">
-                <h2>Popular Jobs</h2>
-                <div className="categories__border"></div>
-                <p>Here's the most popular categories</p>
+            <header className="categories__title text-center mb-5">
+                <h2 className="mx-auto p-3">Popular Jobs</h2>
+                <div className="categories__border mx-auto mb-3"></div>
+                <p className="fs-5">Here's the most popular categories</p>
             </header>
             <div className="categories__grid">
                 <div className="categories-block">
