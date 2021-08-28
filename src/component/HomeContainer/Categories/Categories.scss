@@ -1,41 +1,21 @@
 .categories{
-    // background: #fafafa;
-    
- 
-    &__title h2{
-        color: #55595c;
-    }
-    &__border{
-        width: 60px;
-        border-bottom: 2px solid rgb(67, 36, 243);
-    }
-    &__title p{
-        // font-size: 18px;
-        color: #7e8890;
-    }
     &__grid{
         display: grid;
         gap: 30px;
        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
        justify-content: center;
     }
-    
 }
 
 .categories-block{
-    
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     border: #55595c 1px solid;
     
     img{
         max-width: 50%;
-        padding: 10px;
     }
     h4{
         color: #55595c;
-        padding: 10px;
+       
     }
 }

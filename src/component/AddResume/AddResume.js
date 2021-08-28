@@ -11,6 +11,7 @@ export default function AddResume() {
                 description={'Создайте свое резюме и разместите его'}
                 component={<MainResumeForm />}
              />
+             
             <ResumeDetails />
         </div>
     )

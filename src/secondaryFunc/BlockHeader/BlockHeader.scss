@@ -1,0 +1,13 @@
+.categories{
+    &__title h2{
+        font-family: 'Roboto';
+        color: #55595c;
+    }
+    &__border{
+        width: 60px;
+        border-bottom: 2px solid rgb(67, 36, 243);
+    }
+    &__title p{
+        color: #7e8890;
+    }
+}

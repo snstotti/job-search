@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 
 import { Form } from 'react-bootstrap'
+import FormSelect from '../../../../secondaryFunc/FormSelect/FormSelect';
 
 export default function FormGroup({placeholder,listCheckbox,type='input'}) {
 
     const [state, setstate] = useState('')
 
     console.log(state);
+
+    const listSelect =['Среднее','Среднее специальное','Неоконченное высшее','Высшее','Баколавр','Магистр','Кандидат наук','Доктор наук']
 
     const input = <Form.Control
         as={type}
@@ -16,16 +19,7 @@ export default function FormGroup({placeholder,listCheckbox,type='input'}) {
         placeholder={placeholder}
         onChange={e => setstate(e.target.value)} />
 
-    const select = <Form.Control
-        className="mb-3"
-        as="select"
-        value={type}
-        onChange={e => setstate(e.target.value)}
-    >
-        <option value="DICTUM">Dictamen</option>
-        <option value="CONSTANCY">Constancia</option>
-        <option value="COMPLEMENT">Complemento</option>
-    </Form.Control>
+    const select = <FormSelect listSelect={listSelect} handleChange={setstate} />
 
     const list = listCheckbox.map(elem => <Form.Check
         className="text-secondary"
