@@ -5,14 +5,12 @@ import './FormEducation.scss'
 
 export default function FormEducation({getId}) {
     const [state, setstate] = useState('')
-    console.log(state);
+    // console.log(state);
     const listSelect =['Среднее','Среднее специальное','Неоконченное высшее','Высшее','Баколавр','Магистр','Кандидат наук','Доктор наук']
     return (
         <div className='w-75 p-4 mb-3 bg-light mx-auto bg-light border d-flex'>
-
-            <span className="icon-delete" onClick={e=>getId(e)}> <i className="bi bi-x-circle-fill"></i></span>
            
-            <Form className='w-50 d-flex flex-column '>
+            <Form className='w-50 d-flex flex-column ' >
                 <Form.Group className="mb-3">
                     <FormSelect label={'Уровень'} listSelect={listSelect} handleChange={setstate} />
                 </Form.Group>
